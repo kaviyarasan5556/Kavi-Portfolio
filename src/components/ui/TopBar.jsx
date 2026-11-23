@@ -65,7 +65,7 @@ export function TopBar() {
               width={36}
               height={36}
               decoding="async"
-              className="size-full object-cover object-[50%_18%]"
+              className="size-full object-cover object-[50%_28%]"
             />
           </span>
           <span className="grid size-8 shrink-0 place-items-center rounded-md border border-line-strong font-mono text-[0.6875rem] font-semibold text-accent-text transition-colors duration-300 group-hover:border-accent-text sm:size-9 sm:text-xs">

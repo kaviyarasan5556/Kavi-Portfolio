@@ -1,6 +1,7 @@
 import { Providers } from '@/components/providers/Providers';
 import { Hero } from '@/components/sections/Hero';
 import { Inventory } from '@/components/sections/Inventory';
+import { Method } from '@/components/sections/Method';
 import { NewLead } from '@/components/sections/NewLead';
 import { Orders } from '@/components/sections/Orders';
 import { Overview } from '@/components/sections/Overview';
@@ -24,6 +25,7 @@ export default function App() {
         <main id="main" className="relative z-10">
           <Hero />
           <Overview />
+          <Method />
           <Inventory />
           <Pipeline />
           <Orders />

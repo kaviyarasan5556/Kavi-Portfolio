@@ -1,35 +1,76 @@
 /**
- * Featured projects, in display order.
+ * Featured work, in display order.
  *
- * To add a real screenshot: drop the image into /public/projects/<slug>/ and set
- * `cover: '/projects/<slug>/cover.webp'` on that project.
- *
- * `metrics` entries that still contain "{{...}}" are placeholders for numbers
- * only you know. They show as to-do chips while developing and are hidden in
- * production, so nothing unfinished reaches visitors.
+ * Client / office builds stay high-level (no screenshots, metrics, or internal
+ * flows). Public builds can link to source and live demos.
  */
 export const projects = [
   {
-    slug: 'brewhub',
+    slug: 'alumni-portal',
     orderNo: 'ORD-001',
-    name: 'BrewHub',
-    kind: 'Cafe & restaurant management platform',
+    name: 'Alumni Portal',
+    kind: 'College alumni network · Live',
     pitch:
-      'End-to-end restaurant ops: POS, online ordering, kitchen display, AI SMS ordering, Stripe payments, loyalty, promotions and analytics.',
-    status: { label: 'Client build', tone: 'neutral' },
-    role: 'Full-stack developer across BrewHub modules: React and Next.js, Node.js and Express, PostgreSQL, payments and AI messaging.',
+      'A live MERN platform that connects alumni and students — profiles, career journeys, jobs, referrals and interview notes in one place.',
+    status: { label: 'Live', tone: 'live' },
+    role: 'Full-stack developer — React UI, Node.js / Express APIs, MongoDB, auth and deployment.',
     challenge:
-      'A restaurant needs one system for walk-in billing, online orders, kitchen tickets, customer messaging, loyalty, promotions and the reports that prove the day. Orders also arrive as SMS, and payments have to stay inside the same order workflow.',
+      'College alumni and students had no shared home for careers, referrals and interview experience — everything lived in chats and scattered posts.',
     solution:
-      'BrewHub ties the floor, kitchen and back office together. Gemini-powered SMS workflows create orders from texts. Kitchen display keeps tickets moving. Stripe covers payment. Loyalty, gift cards, promotions and reporting sit in the same product.',
+      'Built and shipped Alumni Hub end to end: role-based auth, profiles, directory, job and referral posts, interview notes and announcements, hosted as a public live app.',
     highlights: [
-      'Point of Sale for restaurant billing and order processing',
-      'Online ordering workflows and order management',
-      'Kitchen display and kitchen-facing order management',
-      'AI-powered SMS ordering with automated order processing',
-      'Customer messaging, customer platform, loyalty and rewards',
-      'Promotions, gift cards, reports and analytics',
-      'Stripe payment integration',
+      'Live demo: alumni-hub.onrender.com',
+      'Role-based alumni and student access',
+      'Profiles and career journeys',
+      'Jobs, internships and referrals',
+      'Interview experience sharing',
+      'Directory and announcements',
+    ],
+    stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+    outcome: 'In use by my college community — open live and on GitHub.',
+    metrics: [],
+    cover: '/projects/alumni-portal/cover.jpg',
+    links: [
+      {
+        label: 'Open live site',
+        href: 'https://alumni-hub.onrender.com/',
+        kind: 'live',
+      },
+      {
+        label: 'Source on GitHub',
+        href: 'https://github.com/kaviyarasan5556/Alumni_Hub',
+        kind: 'github',
+      },
+    ],
+    mockup: 'directory',
+  },
+  {
+    slug: 'brewhub',
+    orderNo: 'ORD-002',
+    name: 'BrewHub',
+    kind: 'Cafe & restaurant management · BrightUI Technologies',
+    pitch:
+      'End-to-end restaurant operations platform: POS, online ordering, kitchen display, AI SMS ordering, Stripe payments, loyalty, inventory and analytics.',
+    status: { label: 'At BrightUI', tone: 'live' },
+    role: 'Junior Software Developer — React, Next.js, Node.js, Express, PostgreSQL, Stripe, Twilio, Gemini.',
+    challenge:
+      'Restaurant teams need one system for walk-in billing, online and mobile orders, kitchen tickets, customer messaging, payments, loyalty and the reports that prove the day.',
+    solution:
+      'BrewHub ties floor, kitchen and back office together — POS and ordering, real-time kitchen queues, AI-powered SMS-to-order, Stripe payments, multi-location roles, inventory, loyalty and sales analytics.',
+    highlights: [
+      'POS (Point of Sale) and online / mobile ordering systems',
+      'Kitchen & order management with real-time queues and TV display',
+      'AI-powered SMS-to-order — intelligent message processing and automated order creation',
+      'AI integration — LLM intent recognition, message understanding and conversational workflows',
+      'Automated SMS marketing and customer notifications',
+      'Stripe payment integration and payment management',
+      'Multi-location management and role-based access control',
+      'Inventory & stock management',
+      'Customer database and loyalty & rewards',
+      'Staff shift & role management',
+      'Events, scheduling and delivery tracking',
+      'Real-time sales analytics and advanced business reporting',
+      'Monthly revenue summaries, SMS usage & cost analytics, and report exports',
     ],
     stack: [
       'React.js',
@@ -43,91 +84,51 @@ export const projects = [
       'Google Gemini',
       'Tailwind CSS',
     ],
-    outcome:
-      'Ordering, kitchen, payments, messaging, loyalty and reporting in one platform a restaurant team can run all day.',
-    metrics: [
-      '{{ADD_REAL_METRIC: locations or outlets served}}',
-      '{{ADD_REAL_METRIC: SMS orders processed per month}}',
-      '{{ADD_REAL_METRIC: report load time before and after optimisation}}',
-    ],
+    outcome: 'Contributing continuously to a production restaurant platform at BrightUI Technologies.',
+    metrics: [],
+    cover: '/projects/brewhub/cover.jpg',
     links: [],
     mockup: 'dashboard',
   },
   {
     slug: 'coylejax',
-    orderNo: 'ORD-002',
+    orderNo: 'ORD-003',
     name: 'Coylejax',
-    kind: 'Project Management CRM',
+    kind: 'Workplace product · BrightUI Technologies',
     pitch:
-      'Projects, clients, teams and tasks in one dashboard, with SMS reminders that reach people away from it.',
-    status: { label: 'Client build', tone: 'neutral' },
-    role: 'Full-stack developer across the full SDLC: React and TypeScript front end, Node.js and Express APIs, MongoDB.',
+      'Full-stack CRM-style dashboard work — React, TypeScript, Node APIs and MongoDB — described at contribution level only.',
+    status: { label: 'At BrightUI', tone: 'neutral' },
+    role: 'Full-stack developer across UI, APIs and data on a team operations product.',
     challenge:
-      'Give a team one place to see every project, client, person and task, and make sure deadlines and updates still reach them when they are not looking at the dashboard.',
+      'Give teams a clear place to manage clients, people and tasks, with notifications that still reach them off-dashboard.',
     solution:
-      'A single dashboard built on secure REST APIs, with Twilio SMS wired in for notifications and reminders.',
+      'Built and iterated on secure REST APIs, TypeScript React screens and SMS notification hooks as part of the full SDLC.',
     highlights: [
-      'Projects, clients, teams and tasks managed in one dashboard',
-      'Secure REST APIs',
-      'Twilio SMS for notifications and reminders',
-      'Involved through the full software development life cycle',
+      'React + TypeScript front end',
+      'Secure Node.js / Express REST APIs',
+      'MongoDB data modelling',
+      'SMS notification integration',
+      'Full software development life cycle',
     ],
     stack: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Twilio SMS'],
-    outcome: 'One dashboard for the work, and reminders that arrive by SMS.',
-    metrics: [
-      '{{ADD_REAL_METRIC: teams or users on the platform}}',
-      '{{ADD_REAL_METRIC: SMS reminders sent per month}}',
-    ],
+    outcome: 'Shipped features on a production team dashboard at BrightUI.',
+    metrics: [],
+    cover: '/projects/coylejax/cover.jpg',
     links: [],
     mockup: 'board',
-  },
-  {
-    slug: 'alumni-portal',
-    orderNo: 'ORD-003',
-    name: 'Alumni Portal',
-    kind: 'College Alumni Network Platform',
-    pitch:
-      'The alumni network my college uses: profiles, career journeys, referrals and interview experiences.',
-    status: { label: 'In use by college', tone: 'live' },
-    role: 'Full-stack developer: React front end, Node.js and Express APIs, MongoDB.',
-    challenge:
-      'Alumni and students of the college had no central place to communicate, collaborate and get career support.',
-    solution:
-      'A role-based platform where alumni keep profiles and career journeys, post jobs, internships and referrals, and share interview experiences, alongside a directory and announcements.',
-    highlights: [
-      'Alumni profiles and career journeys',
-      'Role-based authentication',
-      'Job, internship and referral posts',
-      'Interview experiences',
-      'Directory and announcements',
-    ],
-    stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
-    outcome: 'Currently used by my college.',
-    metrics: [
-      '{{ADD_REAL_METRIC: registered alumni and students}}',
-      '{{ADD_REAL_METRIC: jobs or referrals posted}}',
-    ],
-    links: [
-      {
-        label: 'Source on GitHub',
-        href: 'https://github.com/kaviyarasan5556/Alumni_Hub',
-        kind: 'github',
-      },
-    ],
-    mockup: 'directory',
   },
   {
     slug: 'worxpay',
     orderNo: 'ORD-004',
     name: 'WorxPay',
-    kind: 'Jobs for Daily-Wage Workers',
+    kind: 'Jobs for daily-wage workers',
     pitch: 'Connects daily-wage workers with nearby jobs using maps and real-time location.',
     status: { label: 'Source on GitHub', tone: 'shipped' },
     role: 'Developer.',
     challenge:
       'Workers in the unorganised labour sector have little visibility of which jobs are open near them.',
     solution:
-      'A web app that shows job opportunities on an interactive map and uses real-time location to match workers with the ones nearby.',
+      'A web app that shows job opportunities on an interactive map and uses real-time location to match workers with nearby openings.',
     highlights: [
       'Interactive maps of nearby job opportunities',
       'Real-time location tracking',
@@ -136,6 +137,7 @@ export const projects = [
     stack: ['HTML', 'CSS', 'JavaScript', 'Maps', 'Geolocation'],
     outcome: 'Source published on GitHub.',
     metrics: [],
+    cover: '/projects/worxpay/cover.jpg',
     links: [
       {
         label: 'Source on GitHub',
@@ -149,25 +151,25 @@ export const projects = [
     slug: 'exploreticket',
     orderNo: 'ORD-005',
     name: 'ExploreTicket',
-    kind: 'Museum Ticketing System',
+    kind: 'Museum ticketing system',
     pitch:
       'A museum ticketing system where a chatbot handles bookings, payments and multilingual support.',
-    status: { label: 'Final-year project', tone: 'shipped' },
-    role: 'Developer (final-year project).',
+    status: { label: 'Final year', tone: 'shipped' },
+    role: 'Developer.',
     challenge:
       'Manual ticketing takes museum staff away from core services, and visitors need support in more than one language.',
     solution:
-      'An automated ticketing system with a chatbot that takes bookings and payments and answers in multiple languages, so staff can focus on core services.',
+      'An automated ticketing flow with a chatbot for bookings, payments and multilingual answers so staff can focus on visitors.',
     highlights: [
       'Chatbot-driven ticket booking',
       'Integrated payments',
       'Multilingual support',
-      'Automated ticketing so staff can focus on visitors',
+      'Automated ticketing for staff focus',
     ],
-    // The brief did not list a stack for this project. Replace with the real one.
     stack: ['Chatbot', 'Payments', 'Multilingual support'],
-    outcome: 'Delivered as my final-year project.',
+    outcome: 'Delivered as my final-year build.',
     metrics: [],
+    cover: '/projects/exploreticket/cover.jpg',
     links: [
       {
         label: 'Source on GitHub',

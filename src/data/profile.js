@@ -10,9 +10,9 @@
 export const seo = {
   title: 'Kaviyarasan R | Full Stack Software Developer',
   description:
-    'Kaviyarasan R is a full-stack software developer in Coimbatore, India. He builds ordering, CRM and cafe platforms with React, Next.js, Node.js and Express, including AI-assisted SMS workflows, payments and multi-location operations.',
+    'Kaviyarasan R is a full-stack software developer in Coimbatore, India. MERN stack, REST APIs, AI agents and production features at BrightUI Technologies — plus public work like Alumni Portal.',
   shareImageAlt:
-    'Kaviyarasan R, Software Developer (Full Stack). I build the systems behind businesses.',
+    'Kaviyarasan R, Full Stack Developer. I build the systems behind businesses.',
   keywords: [
     'Kaviyarasan R',
     'Full Stack Developer',
@@ -21,7 +21,7 @@ export const seo = {
     'Next.js',
     'Node.js',
     'Express',
-    'BrewHub',
+    'MongoDB',
     'Coimbatore',
   ],
 };
@@ -34,7 +34,7 @@ export const profile = {
   currentCompany: 'BrightUI Technologies',
   currentSince: 'June 2025',
   currentProduct: 'BrewHub',
-  currentProductKind: 'Cafe & restaurant management platform',
+  currentProductKind: 'a cafe and restaurant management platform',
   location: {
     city: 'Coimbatore',
     region: 'Tamil Nadu',
@@ -59,8 +59,7 @@ export const profile = {
     alt: 'Kaviyarasan R, professional passport portrait',
   },
   summary:
-    'Software developer with end-to-end product work across BrewHub, Coylejax and Alumni Portal: restaurant POS, AI SMS ordering, payments, loyalty and analytics, plus 10+ websites shipped.',
-  /** Shown in the status widget. Set open to false to show the "closed" label instead. */
+    'Full-stack developer focused on React, Node.js and modern APIs — delivering production features at BrightUI Technologies and public platforms such as Alumni Portal.',
   availability: {
     open: true,
     openLabel: 'Available for opportunities',
@@ -70,74 +69,82 @@ export const profile = {
 };
 
 export const hero = {
-  eyebrow: 'Kaviyarasan R · Software Developer (Full Stack)',
-  /** The headline is split into parts so one word can carry the accent colour. */
+  eyebrow: 'Kaviyarasan R · Full Stack Developer',
   headline: [
     { text: 'I build the', accent: false },
     { text: 'systems', accent: true },
     { text: 'behind businesses.', accent: false },
   ],
-  rotating: ['Restaurant POS', 'Kitchen display', 'SMS-to-order', 'Sales reports'],
-  lede: 'Software developer shipping end-to-end product modules: BrewHub, Coylejax and Alumni Portal, plus AI agents and restaurant payment workflows.',
+  rotating: [
+    'React',
+    'Next.js',
+    'TypeScript',
+    'JavaScript',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'PostgreSQL',
+    'AI Agents',
+  ],
+  lede: 'Junior Software Developer at BrightUI Technologies. Production features on the MERN stack, plus Alumni Portal and public builds you can open on GitHub.',
   readouts: [
     { label: 'Based in', value: 'Coimbatore, Tamil Nadu' },
-    { label: 'Currently', value: 'BrewHub at BrightUI Technologies' },
-    { label: 'Products', value: 'BrewHub · Coylejax · Alumni Portal' },
-    { label: 'Strongest at', value: 'POS · AI agents · Payments' },
+    { label: 'Currently', value: 'BrightUI Technologies' },
+    { label: 'Live build', value: 'alumni-hub.onrender.com' },
+    { label: 'Strongest at', value: 'MERN · AI agents · APIs' },
   ],
 };
 
 export const about = {
-  /** Section header under Overview. */
-  lede: 'Software developer in Coimbatore. End-to-end product work across BrewHub, Coylejax and Alumni Portal, with AI agents and restaurant payments in the mix.',
+  lede: 'Full-stack software developer based in Coimbatore, building production web applications with the MERN stack, REST APIs and AI-assisted workflows.',
   paragraphs: [
-    'I work end to end on business-critical product modules: restaurant POS and online ordering, kitchen display, customer messaging, loyalty, promotions and the reports that keep operations honest.',
-    'At BrightUI Technologies most of that time goes into BrewHub, with parallel work on Coylejax and Alumni Portal. On BrewHub that includes AI-powered SMS ordering, Stripe payments, gift cards and promotions, plus the customer-facing platform around them.',
-    'Alongside product work I have designed, built and maintained 10+ websites, and wired AI agents into workflows where they remove real operational load.',
+    'I design and develop end-to-end web applications — React and Next.js on the frontend, Node.js and Express APIs on the backend, with MongoDB or PostgreSQL for data.',
+    'At BrightUI Technologies I contribute to live products including BrewHub and Coylejax, owning features across the UI, API and data layers, along with payments, messaging and AI integrations.',
+    'Alongside company work I have shipped public platforms such as Alumni Portal, delivered 10+ websites, and integrated AI agents into practical product workflows.',
   ],
   problems: [
     {
-      code: 'POS',
-      title: 'Billing that keeps the floor moving',
-      body: 'Restaurant POS and online ordering so walk-in and remote tickets land in the same order pipeline.',
+      code: 'API',
+      title: 'Reliable full-stack delivery',
+      body: 'Production-ready React and Next.js interfaces connected to secure REST APIs and well-structured data models.',
     },
     {
-      code: 'SMS',
-      title: 'Orders that start as a text',
-      body: 'AI-powered SMS ordering: the message is understood, the order is created, and nobody retypes it into a POS.',
+      code: 'AI',
+      title: 'Practical AI integration',
+      body: 'LLM-assisted messaging and conversational workflows that reduce manual work and fit cleanly into existing product flows.',
     },
     {
       code: 'PAY',
-      title: 'Payments that stay with the ticket',
-      body: 'Stripe payment workflows so takeaway and delivery charges sit inside the same restaurant order pipeline.',
+      title: 'Trusted third-party systems',
+      body: 'Payments, SMS and external services integrated with clear ownership across frontend, backend and operations.',
     },
   ],
-  /** Only counts that follow directly from facts you provided. No invented metrics. */
   counters: [
-    { value: 1.5, decimals: 1, suffix: ' yrs', label: 'building full-stack web apps' },
+    { value: 1.5, decimals: 1, suffix: ' yrs', label: 'building full-stack web applications' },
     {
       value: 3,
       decimals: 0,
       suffix: '',
-      label: 'major products: BrewHub, Coylejax, Alumni Portal',
+      label: 'major platforms in active focus',
     },
     { value: 10, decimals: 0, suffix: '+', label: 'websites designed and developed' },
   ],
   practice: [
-    'End-to-end features',
+    'End-to-end feature delivery',
     'AI agent integration',
-    'Third-party APIs',
+    'Third-party API integration',
     'Problem solving',
-    'Debugging',
+    'Debugging & code review',
     'Agile (Scrum)',
   ],
 };
 
 export const navSections = [
   { id: 'overview', label: 'About', system: 'Overview' },
+  { id: 'method', label: 'Method', system: 'Process' },
   { id: 'inventory', label: 'Skills', system: 'Inventory' },
   { id: 'pipeline', label: 'Experience', system: 'Pipeline' },
-  { id: 'orders', label: 'Projects', system: 'Orders' },
+  { id: 'orders', label: 'Work', system: 'Orders' },
   { id: 'records', label: 'Education', system: 'Records' },
   { id: 'lead', label: 'Contact', system: 'New lead' },
 ];

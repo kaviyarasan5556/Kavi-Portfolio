@@ -1,7 +1,6 @@
 /**
  * Labels for the hero 3D "system core".
- * Hubs stay fixed. Orbit skills rotate through the six satellite slots
- * so the scene can show the full stack without covering the centrepiece.
+ * Hubs stay fixed. Orbit skills rotate through the six satellite slots.
  */
 
 export const coreHubs = [
@@ -10,28 +9,18 @@ export const coreHubs = [
   { id: 'data', label: 'Data', short: 'DB' },
 ];
 
-/** Short names that fit on a floating badge. Keep them punchy. */
+/** Matches the hero stack focus. */
 export const coreOrbitSkills = [
   'React',
   'Next.js',
   'TypeScript',
-  'Tailwind',
+  'JavaScript',
   'Node.js',
   'Express',
-  'REST APIs',
-  'PostgreSQL',
   'MongoDB',
-  'Sequelize',
-  'MySQL',
-  'Gemini',
+  'PostgreSQL',
   'AI Agents',
-  'SMS Orders',
-  'Stripe',
-  'Twilio',
-  'Docker',
+  'Tailwind',
+  'REST APIs',
   'Git',
-  'POS',
-  'Kitchen Ops',
-  'Loyalty',
-  'Analytics',
 ];

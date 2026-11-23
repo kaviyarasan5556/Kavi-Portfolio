@@ -21,7 +21,7 @@ export function Overview() {
           id="overview-title"
           index="01"
           system="Overview"
-          title="The work, in short."
+          title="About me."
           lede={about.lede}
         />
 
@@ -43,21 +43,21 @@ export function Overview() {
 
           {/* Photo */}
           <Reveal className="md:col-span-3 lg:col-span-5 lg:row-span-2" delay={0.08}>
-            <figure className="panel group relative h-full min-h-[14rem] overflow-hidden sm:min-h-[18rem]">
+            <figure className="panel group relative flex h-full min-h-[18rem] items-end justify-center overflow-hidden bg-raised sm:min-h-[22rem]">
               <img
                 src={profile.photo.src}
                 alt={profile.photo.alt}
                 loading="lazy"
                 decoding="async"
-                className="absolute inset-0 size-full object-cover object-[50%_18%] brightness-90 grayscale transition-[filter,transform] duration-700 ease-out-expo group-hover:scale-[1.03] group-hover:brightness-100 group-hover:grayscale-0"
+                className="relative z-0 h-full w-full object-contain object-center brightness-95 grayscale transition-[filter,transform] duration-700 ease-out-expo group-hover:scale-[1.02] group-hover:brightness-100 group-hover:grayscale-0"
               />
 
               <div
-                className="absolute inset-0 bg-linear-to-t from-black/75 via-black/10 to-transparent"
+                className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-2/5 bg-linear-to-t from-black/80 via-black/35 to-transparent"
                 aria-hidden="true"
               />
 
-              <figcaption className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-6 text-white">
+              <figcaption className="absolute inset-x-0 bottom-0 z-20 flex items-end justify-between gap-4 p-5 text-white sm:p-6">
                 <div>
                   <p className="font-display text-xl font-semibold">{profile.name}</p>
                   <p className="mt-1 text-sm text-white/75">{profile.role}</p>
@@ -103,7 +103,7 @@ export function Overview() {
           {/* How I work */}
           <Reveal className="md:col-span-6 lg:col-span-7" delay={0.1}>
             <article className={cell}>
-              <p className="label">How I work</p>
+              <p className="label">Practice</p>
               <ul className="mt-5 flex flex-wrap gap-2">
                 {about.practice.map((item) => (
                   <li

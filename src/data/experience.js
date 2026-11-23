@@ -27,9 +27,9 @@ export const stages = [
     location: 'Coimbatore, India',
     period: 'June 2025 – Present',
     summary:
-      'End-to-end product work on BrewHub, Coylejax and Alumni Portal: restaurant ops, CRM, AI agents and payments.',
+      'End-to-end product work on BrewHub and Coylejax: restaurant ops, CRM, AI agents and payments.',
     points: [
-      'Contributed to three major products: BrewHub, Coylejax and Alumni Portal.',
+      'Contributed to major products: BrewHub and Coylejax.',
       'On BrewHub: POS, online ordering, kitchen display, AI SMS ordering, customer messaging, loyalty, promotions, gift cards and analytics.',
       'Integrated Stripe payment workflows so restaurant charges stay in the same order pipeline.',
       'Integrated AI agents into product workflows to automate tasks and reduce manual ops.',

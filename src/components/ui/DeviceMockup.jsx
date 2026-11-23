@@ -185,14 +185,14 @@ export function DeviceMockup({ project, className }) {
           {project.slug}
         </span>
       </div>
-      <div className="relative aspect-16/10">
+      <div className="relative aspect-16/10 bg-raised">
         {project.cover ? (
           <img
             src={project.cover}
             alt=""
             loading="lazy"
             decoding="async"
-            className="absolute inset-0 size-full object-cover object-top"
+            className="absolute inset-0 size-full object-cover object-center"
           />
         ) : (
           <div className="absolute inset-0 p-[5%]" aria-hidden="true">

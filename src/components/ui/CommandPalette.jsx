@@ -196,7 +196,7 @@ export function CommandPalette() {
                             keywords={['project', 'case study', project.kind, ...project.stack]}
                             onSelect={() => run(() => openProject(project.slug), true)}
                           >
-                            {`Open case study: ${project.name}`}
+                            {`Open: ${project.name}`}
                           </Item>
                         ))}
                       </Command.Group>

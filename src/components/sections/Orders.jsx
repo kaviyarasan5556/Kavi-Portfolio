@@ -1,5 +1,6 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { DeviceMockup } from '@/components/ui/DeviceMockup';
+import { GitHubIcon } from '@/components/ui/BrandIcons';
 import { openProject } from '@/lib/drawer';
 import { Reveal } from '@/components/ui/Reveal';
 import { SectionHeader } from '@/components/ui/SectionHeader';
@@ -13,6 +14,8 @@ const VISIBLE_STACK = 4;
 function OrderCard({ project, featured }) {
   const stack = project.stack.slice(0, VISIBLE_STACK);
   const hidden = project.stack.length - stack.length;
+  const live = project.links.find((link) => link.kind === 'live');
+  const github = project.links.find((link) => link.kind === 'github');
 
   return (
     <TiltCard className="h-full rounded-2xl" max={featured ? 2.5 : 4}>
@@ -68,20 +71,49 @@ function OrderCard({ project, featured }) {
             )}
           </ul>
 
-          <div className="mt-auto pt-6">
-            {/* The ::after layer stretches this button over the whole card. */}
+          <div className="relative z-10 mt-auto flex flex-wrap items-center gap-x-4 gap-y-2 pt-6">
             <button
               type="button"
               onClick={() => openProject(project.slug)}
-              className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-ink transition-colors duration-300 group-hover:text-accent-text after:absolute after:inset-0 after:rounded-2xl"
+              className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-ink transition-colors duration-300 group-hover:text-accent-text after:absolute after:inset-0 after:z-0 after:rounded-2xl"
             >
-              Open case study
-              <span className="sr-only">: {project.name}</span>
-              <ArrowRight
-                className="size-4 transition-transform duration-300 ease-out-expo group-hover:translate-x-1"
-                aria-hidden="true"
-              />
+              <span className="relative z-10 inline-flex items-center gap-2">
+                View details
+                <span className="sr-only">: {project.name}</span>
+                <ArrowRight
+                  className="size-4 transition-transform duration-300 ease-out-expo group-hover:translate-x-1"
+                  aria-hidden="true"
+                />
+              </span>
             </button>
+
+            {live ? (
+              <a
+                href={live.href}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(event) => event.stopPropagation()}
+                className="relative z-10 inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-accent-text underline-offset-4 hover:underline"
+              >
+                Live
+                <ArrowUpRight className="size-3.5" aria-hidden="true" />
+                <span className="sr-only">(opens in a new tab)</span>
+              </a>
+            ) : null}
+
+            {github ? (
+              <a
+                href={github.href}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(event) => event.stopPropagation()}
+                className="relative z-10 inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-muted transition-colors hover:text-accent-text"
+              >
+                <GitHubIcon className="size-3.5" />
+                Code
+                <span className="sr-only">(opens in a new tab)</span>
+              </a>
+            ) : null}
           </div>
         </div>
       </article>
@@ -101,8 +133,8 @@ export function Orders() {
           id="orders-title"
           index="04"
           system="Orders"
-          title="Selected projects."
-          lede="Open any order for the full case study: the problem, what I built and what it runs on."
+          title="Selected work."
+          lede="A closer look at what I have shipped — the problem, the build, and the stack behind it."
         />
 
         <ul className="mt-5 grid grid-cols-1 gap-3 lg:grid-cols-2 lg:gap-4">
