@@ -20,7 +20,6 @@ function OrderCard({ project, featured }) {
   return (
     <TiltCard className="h-full rounded-2xl" max={featured ? 2.5 : 4}>
       <article
-        data-cursor="open"
         className={cn(
           'panel group relative grid h-full gap-4 p-4 transition-colors duration-300 hover:border-line-strong sm:p-5',
           featured && 'lg:grid-cols-12 lg:items-center lg:gap-8 lg:p-6',

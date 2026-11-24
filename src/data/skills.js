@@ -22,7 +22,7 @@ export const skillGroups = [
     id: 'product',
     code: 'PD',
     title: 'Product domains',
-    note: 'Restaurant and customer modules shipped end to end',
+    note: 'Cafe operations and customer modules shipped end to end',
     skills: [
       { name: 'POS systems', tier: 'core' },
       { name: 'Online ordering', tier: 'core' },

@@ -27,12 +27,12 @@ export const stages = [
     location: 'Coimbatore, India',
     period: 'June 2025 – Present',
     summary:
-      'End-to-end product work on BrewHub and Coylejax: restaurant ops, CRM, AI agents and payments.',
+      'End-to-end product work on CafeSphere and BuildSphere: cafe ops, construction project management, AI agents and payments.',
     points: [
-      'Contributed to major products: BrewHub and Coylejax.',
-      'On BrewHub: POS, online ordering, kitchen display, AI SMS ordering, customer messaging, loyalty, promotions, gift cards and analytics.',
-      'Integrated Stripe payment workflows so restaurant charges stay in the same order pipeline.',
-      'Integrated AI agents into product workflows to automate tasks and reduce manual ops.',
+      'Contributed to major products: CafeSphere and BuildSphere.',
+      'On CafeSphere: POS, online ordering, kitchen display, AI SMS ordering, customer messaging, loyalty, promotions, gift cards and analytics.',
+      'Integrated Stripe payment workflows so cafe charges stay in the same order pipeline.',
+      'Integrated AI agents into product workflows to automate tasks and reduce manual operations.',
       'Designed, developed and maintained 10+ websites for different business needs.',
     ],
     stack: [
@@ -57,7 +57,7 @@ export const stages = [
     location: '',
     period: 'To be scheduled',
     summary:
-      'This stage is open. The work I want more of: restaurant POS, AI-assisted workflows, payments and end-to-end product modules.',
+      'This stage is open. The work I want more of: cafe POS, AI-assisted workflows, payments and end-to-end product modules.',
     points: [],
     stack: [],
   },

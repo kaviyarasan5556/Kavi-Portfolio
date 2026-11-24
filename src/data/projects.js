@@ -17,7 +17,7 @@ export const projects = [
     challenge:
       'College alumni and students had no shared home for careers, referrals and interview experience — everything lived in chats and scattered posts.',
     solution:
-      'Built and shipped Alumni Hub end to end: role-based auth, profiles, directory, job and referral posts, interview notes and announcements, hosted as a public live app.',
+      'Built and shipped Alumni Portal end to end: role-based auth, profiles, directory, job and referral posts, interview notes and announcements, hosted as a public live app.',
     highlights: [
       'Live demo: alumni-hub.onrender.com',
       'Role-based alumni and student access',
@@ -29,7 +29,7 @@ export const projects = [
     stack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
     outcome: 'In use by my college community — open live and on GitHub.',
     metrics: [],
-    cover: '/projects/alumni-portal/cover.jpg',
+    cover: '/projects/alumni-portal/cover-v2.jpg',
     links: [
       {
         label: 'Open live site',
@@ -47,16 +47,16 @@ export const projects = [
   {
     slug: 'brewhub',
     orderNo: 'ORD-002',
-    name: 'BrewHub',
-    kind: 'Cafe & restaurant management · BrightUI Technologies',
+    name: 'CafeSphere',
+    kind: 'Multi-Location Cafe Management Platform · BrightUI Technologies',
     pitch:
-      'End-to-end restaurant operations platform: POS, online ordering, kitchen display, AI SMS ordering, Stripe payments, loyalty, inventory and analytics.',
+      'Multi-location cafe management platform: POS, online ordering, kitchen display, AI SMS ordering, Stripe payments, loyalty, inventory and analytics.',
     status: { label: 'At BrightUI', tone: 'live' },
     role: 'Junior Software Developer — React, Next.js, Node.js, Express, PostgreSQL, Stripe, Twilio, Gemini.',
     challenge:
-      'Restaurant teams need one system for walk-in billing, online and mobile orders, kitchen tickets, customer messaging, payments, loyalty and the reports that prove the day.',
+      'Cafe teams need one system for walk-in billing, online and mobile orders, kitchen tickets, customer messaging, payments, loyalty and the reports that prove the day — across multiple locations.',
     solution:
-      'BrewHub ties floor, kitchen and back office together — POS and ordering, real-time kitchen queues, AI-powered SMS-to-order, Stripe payments, multi-location roles, inventory, loyalty and sales analytics.',
+      'CafeSphere ties floor, kitchen and back office together — POS and ordering, real-time kitchen queues, AI-powered SMS-to-order, Stripe payments, multi-location roles, inventory, loyalty and sales analytics.',
     highlights: [
       'POS (Point of Sale) and online / mobile ordering systems',
       'Kitchen & order management with real-time queues and TV display',
@@ -84,36 +84,41 @@ export const projects = [
       'Google Gemini',
       'Tailwind CSS',
     ],
-    outcome: 'Contributing continuously to a production restaurant platform at BrightUI Technologies.',
+    outcome: 'Contributing continuously to CafeSphere, a multi-location cafe platform at BrightUI Technologies.',
     metrics: [],
-    cover: '/projects/brewhub/cover.jpg',
+    cover: '/projects/brewhub/cover-v2.jpg',
     links: [],
     mockup: 'dashboard',
   },
   {
     slug: 'coylejax',
     orderNo: 'ORD-003',
-    name: 'Coylejax',
-    kind: 'Workplace product · BrightUI Technologies',
+    name: 'BuildSphere',
+    kind: 'Construction Project & Contract Management Platform · BrightUI Technologies',
     pitch:
-      'Full-stack CRM-style dashboard work — React, TypeScript, Node APIs and MongoDB — described at contribution level only.',
+      'Construction project and contract management platform — bidding, planning, material procurement, teams and SMS notifications in one system.',
     status: { label: 'At BrightUI', tone: 'neutral' },
-    role: 'Full-stack developer across UI, APIs and data on a team operations product.',
+    role: 'Full-stack developer across UI, APIs and data on a construction operations product.',
     challenge:
-      'Give teams a clear place to manage clients, people and tasks, with notifications that still reach them off-dashboard.',
+      'Construction teams need one place to manage projects, contracts, bids, materials and workflows, with notifications that still reach them off-dashboard.',
     solution:
-      'Built and iterated on secure REST APIs, TypeScript React screens and SMS notification hooks as part of the full SDLC.',
+      'Built and iterated on BuildSphere with secure REST APIs, TypeScript React screens, material procurement flows and SMS notification hooks as part of the full SDLC.',
     highlights: [
-      'React + TypeScript front end',
-      'Secure Node.js / Express REST APIs',
-      'MongoDB data modelling',
+      'Construction project & contract management',
+      'Contract bidding & bid management',
+      'Project planning & workflow management',
+      'React.js & TypeScript frontend development',
+      'Secure Node.js & Express.js REST API development',
+      'MongoDB database design & data modelling',
       'SMS notification integration',
-      'Full software development life cycle',
+      'Construction material ordering & procurement management',
+      'Responsive user interface & application development',
+      'Full software development life cycle (SDLC)',
     ],
     stack: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Twilio SMS'],
-    outcome: 'Shipped features on a production team dashboard at BrightUI.',
+    outcome: 'Shipped features on BuildSphere at BrightUI Technologies.',
     metrics: [],
-    cover: '/projects/coylejax/cover.jpg',
+    cover: '/projects/coylejax/cover-v2.jpg',
     links: [],
     mockup: 'board',
   },
@@ -137,7 +142,7 @@ export const projects = [
     stack: ['HTML', 'CSS', 'JavaScript', 'Maps', 'Geolocation'],
     outcome: 'Source published on GitHub.',
     metrics: [],
-    cover: '/projects/worxpay/cover.jpg',
+    cover: '/projects/worxpay/cover-v2.jpg',
     links: [
       {
         label: 'Source on GitHub',
@@ -169,7 +174,7 @@ export const projects = [
     stack: ['Chatbot', 'Payments', 'Multilingual support'],
     outcome: 'Delivered as my final-year build.',
     metrics: [],
-    cover: '/projects/exploreticket/cover.jpg',
+    cover: '/projects/exploreticket/cover-v2.jpg',
     links: [
       {
         label: 'Source on GitHub',

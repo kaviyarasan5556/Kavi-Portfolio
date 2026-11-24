@@ -1,4 +1,4 @@
-import { ArrowUpRight, Download, MapPin } from 'lucide-react';
+import { ArrowUpRight, Download } from 'lucide-react';
 import { Counter } from '@/components/ui/Counter';
 import { Reveal } from '@/components/ui/Reveal';
 import { SectionHeader } from '@/components/ui/SectionHeader';
@@ -27,7 +27,7 @@ export function Overview() {
 
         <div className="mt-5 grid grid-cols-1 gap-3 md:grid-cols-6 md:gap-4 lg:grid-cols-12">
           {/* Profile copy */}
-          <Reveal className="md:col-span-6 lg:col-span-7 lg:row-span-2">
+          <Reveal className="md:col-span-6 lg:col-span-7">
             <article className={cell}>
               <p className="label">Profile</p>
               <p className="mt-4 font-display text-2xl leading-snug tracking-[-0.01em] text-ink sm:text-[1.75rem]">
@@ -41,37 +41,8 @@ export function Overview() {
             </article>
           </Reveal>
 
-          {/* Photo */}
-          <Reveal className="md:col-span-3 lg:col-span-5 lg:row-span-2" delay={0.08}>
-            <figure className="panel group relative flex h-full min-h-[18rem] items-end justify-center overflow-hidden bg-raised sm:min-h-[22rem]">
-              <img
-                src={profile.photo.src}
-                alt={profile.photo.alt}
-                loading="lazy"
-                decoding="async"
-                className="relative z-0 h-full w-full object-contain object-center brightness-95 grayscale transition-[filter,transform] duration-700 ease-out-expo group-hover:scale-[1.02] group-hover:brightness-100 group-hover:grayscale-0"
-              />
-
-              <div
-                className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-2/5 bg-linear-to-t from-black/80 via-black/35 to-transparent"
-                aria-hidden="true"
-              />
-
-              <figcaption className="absolute inset-x-0 bottom-0 z-20 flex items-end justify-between gap-4 p-5 text-white sm:p-6">
-                <div>
-                  <p className="font-display text-xl font-semibold">{profile.name}</p>
-                  <p className="mt-1 text-sm text-white/75">{profile.role}</p>
-                </div>
-                <p className="flex items-center gap-1.5 font-mono text-[0.6875rem] tracking-[0.12em] text-white/75 uppercase">
-                  <MapPin size={12} aria-hidden="true" />
-                  {profile.location.city}
-                </p>
-              </figcaption>
-            </figure>
-          </Reveal>
-
           {/* Currently */}
-          <Reveal className="md:col-span-3 lg:col-span-5" delay={0.05}>
+          <Reveal className="md:col-span-6 lg:col-span-5" delay={0.05}>
             <article className={cell}>
               <p className="label flex items-center gap-2">
                 <span className="size-1.5 rounded-full bg-ok" aria-hidden="true" />
@@ -100,8 +71,8 @@ export function Overview() {
             </article>
           </Reveal>
 
-          {/* How I work */}
-          <Reveal className="md:col-span-6 lg:col-span-7" delay={0.1}>
+          {/* Practice */}
+          <Reveal className="md:col-span-6 lg:col-span-12" delay={0.1}>
             <article className={cell}>
               <p className="label">Practice</p>
               <ul className="mt-5 flex flex-wrap gap-2">

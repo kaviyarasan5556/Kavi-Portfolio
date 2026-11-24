@@ -33,8 +33,8 @@ export const profile = {
   currentTitle: 'Junior Software Developer',
   currentCompany: 'BrightUI Technologies',
   currentSince: 'June 2025',
-  currentProduct: 'BrewHub',
-  currentProductKind: 'a cafe and restaurant management platform',
+  currentProduct: 'CafeSphere',
+  currentProductKind: 'a multi-location cafe management platform',
   location: {
     city: 'Coimbatore',
     region: 'Tamil Nadu',
@@ -99,7 +99,7 @@ export const about = {
   lede: 'Full-stack software developer based in Coimbatore, building production web applications with the MERN stack, REST APIs and AI-assisted workflows.',
   paragraphs: [
     'I design and develop end-to-end web applications — React and Next.js on the frontend, Node.js and Express APIs on the backend, with MongoDB or PostgreSQL for data.',
-    'At BrightUI Technologies I contribute to live products including BrewHub and Coylejax, owning features across the UI, API and data layers, along with payments, messaging and AI integrations.',
+    'At BrightUI Technologies I contribute to live products including CafeSphere — Multi-Location Cafe Management Platform and BuildSphere — Construction Project & Contract Management Platform, owning features across the UI, API and data layers, along with payments, messaging and AI integrations.',
     'Alongside company work I have shipped public platforms such as Alumni Portal, delivered 10+ websites, and integrated AI agents into practical product workflows.',
   ],
   problems: [

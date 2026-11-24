@@ -1,6 +1,5 @@
 import { MotionConfig } from 'framer-motion';
 import { CommandPalette } from '@/components/ui/CommandPalette';
-import { Cursor } from '@/components/ui/Cursor';
 import { ProjectDrawer } from '@/components/ui/ProjectDrawer';
 import { Toaster } from '@/components/ui/Toaster';
 import { SmoothScroll } from './SmoothScroll';
@@ -10,7 +9,6 @@ export function Providers({ children }) {
   return (
     <MotionConfig reducedMotion="user">
       <SmoothScroll />
-      <Cursor />
       {children}
       <ProjectDrawer />
       <CommandPalette />
